@@ -1,0 +1,21 @@
+body {
+  background: white;
+}
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.web-card {
+  width: 280px;
+  margin: 0.8rem 1.2rem;
+  padding: 0.5rem 0;
+}
+.web-card .web-card-name p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 260px;
+}
+.web-card .web-card-description p {
+  width: 200px;
+  padding: 0.3rem 0;
+}

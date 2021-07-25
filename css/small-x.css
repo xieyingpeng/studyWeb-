@@ -1,0 +1,23 @@
+body {
+  background: white;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.web-card {
+  width: 160px;
+  margin: 0.5rem 0.5rem;
+  padding: 0.2rem 0;
+}
+.web-card .web-card-name p {
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70px;
+}
+.web-card .web-card-description p {
+  width: 70px;
+  padding: 0.2rem 0.2rem;
+  color: black;
+}

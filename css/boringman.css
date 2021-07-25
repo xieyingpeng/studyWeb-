@@ -1,0 +1,211 @@
+@import url(leftaside.css);
+@import url(card.css);
+@import url(common.css);
+@import url(topnav.css);
+@import url(small-x.css) only screen and (max-width: 768px);
+@import url(small.css) only screen and (min-width: 768px);
+@import url(medium.css) only screen and (min-width: 960px);
+@import url(big.css) only screen and (min-width: 1200px);
+
+body {
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+}
+
+header {
+  /* background-color: green; */
+  height: auto;
+}
+
+main {
+  /* background-color: hotpink; */
+  height: fit-content;
+  display: flex;
+}
+
+div.navigation {
+  width: 60px;
+  height: 100vh;
+}
+
+div.right {
+  width: 100%;
+  height: 100%;
+  background-color: snow;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+/* 星星部分 */
+div.stars {
+  position: absolute;
+  top:40px;
+  left:185px;
+  animation-name: gostar,rotate;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+  color: #f9ca24;
+  font-size: 2rem;
+  text-shadow: 1px 1px 5px rgb(236, 233, 22);
+}
+
+@keyframes gostar {
+  from {
+    opacity: 1;
+  }
+
+  20%{
+    opacity: 0.8;
+  }
+
+  60%{
+    opacity: 0.5;
+    text-shadow: 3px 2px 8px rgb(138, 238, 129);
+  }
+  to {
+    opacity: 1;
+    text-shadow: 1px 1px 5px rgb(206, 223, 110);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+     transform: rotateY(360deg);
+  }
+
+  to {
+     transform: rotate(0);
+  }
+
+}
+
+
+
+div.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content:space-around; */
+}
+
+div.tools {
+  padding: 0.5rem;
+  position: fixed;
+  right: 0.2rem;
+  bottom: 13rem;
+}
+
+div.tools ul {
+  /* padding:1rem; */
+  /* border: 1px solid black; */
+  margin-right: 5px;
+}
+
+div.tools ul li {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #f5f6fa;
+  border-radius: 50%;
+  padding: 10px 13px;
+  margin: 0.8rem 0;
+  color: #7f8fa6;
+  font-size: 18px;
+  border: 1px solid #f5f6fa;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.tools ul li:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 8px #7f8fa6 inset, 1px 1px 10px #0097e6;
+}
+
+.weixin {
+  position: relative;
+}
+.weixin:hover::before {
+  content: "";
+  width: 165px;
+  height: 180px;
+  position: absolute;
+  right: 60px;
+  top: -50px;
+  background-color: #30336b;
+  background-image: url(https://lyking90.oss-cn-shenzhen.aliyuncs.com/boringman/mywechatpng.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 5px;
+  border: 3px solid #30336b;
+  box-sizing: border-box;
+}
+.weixin:hover::after {
+  content: "\f0da";
+  position: absolute;
+  right: 31px;
+  top: -5px;
+  font-family: fontAwesome;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 35px;
+  color: #30336b;
+}
+
+footer {
+  margin-top: 1rem;
+  height:auto;
+  border-top: 0.1px solid #ddd;
+  background-image: linear-gradient(-225deg, #cbbacc 0%, #2580b3 100%);
+  box-sizing: border-box;
+}
+
+footer div {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 5px;
+  /* color: #6c757d; */
+  /* background-image: linear-gradient(45deg, #a3bded 0%, #7795bd 100%); */
+  color: #ddd;
+}
+
+ul.social-tool{
+
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ddd;
+  width: 230px;
+  padding-top: 5px;
+}
+
+ul.social-tool li{
+
+  margin:0 0.3rem;
+
+}
+
+ul.social-tool li img{
+    padding:2px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border: 3px double #dcdde1;
+}
+
+
+ul.social-tool li img:hover{
+   cursor: pointer;
+   box-shadow:3px  3px 6px #f6e58d,-3px  -3px 8px #c23616;
+}

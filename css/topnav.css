@@ -1,0 +1,132 @@
+header {
+  border-bottom: 5px solid #2ecc71;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+header .navbar {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+}
+header .navbar .logo {
+  color: #16a085;
+  font-weight: bold;
+  margin-right: auto;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-shadow: 8px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: 1.5s;
+  perspective: 90px;
+}
+header .navbar .logo:hover {
+  transform: rotateY(360deg);
+}
+header .navbar .logo + label {
+  display: none;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  color: #555;
+  cursor: pointer;
+}
+header .navbar .logo + label + input {
+  display: none;
+}
+header .navbar .logo + label:hover {
+  box-shadow: 2px 2px 2px rgba(219, 205, 11, 0.3), -2px -2px 2px rgba(226, 223, 56, 0.5);
+}
+header .navbar .collapse {
+  display: flex;
+  flex-grow: 1;
+}
+header .navbar .collapse .links {
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: auto;
+}
+header .navbar .collapse .links li {
+  margin: 0 20px;
+  font-size: 1.2rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+header .navbar .collapse .links li a {
+  color: #777;
+}
+header .navbar .collapse .links li a:hover {
+  color: #2ecc71;
+}
+header .navbar .collapse .form a {
+  border: solid 1px #27ae60;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+  color: #2ecc71;
+  position: relative;
+}
+header .navbar .collapse .form a.form-bg {
+  background: #27ae60;
+  color: whitesmoke;
+}
+header .navbar .collapse .form a:hover {
+  font-weight: bold;
+  border-radius: 50%;
+  transition: 1.5s;
+}
+header .navbar li:last-of-type {
+  position: relative;
+}
+header .navbar li:last-of-type:hover::before {
+  content: "如果您喜欢我，可以请我喝杯咖啡呀~";
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  left: -60px;
+  top: 45px;
+  z-index: 10;
+  color: whitesmoke;
+  padding: 10px;
+  background: url(../images/收款码.jpg) no-repeat;
+  background-size: contain;
+  background-position-y: 70px;
+}
+header .navbar li:last-of-type:hover::after {
+  content: "";
+  width: 210px;
+  height: 250px;
+  left: -70px;
+  top: 45px;
+  padding: 15px;
+  background-color: rgba(33, 66, 82, 0.904);
+  position: absolute;
+  z-index: 9;
+}
+@media only screen and (max-width: 960px) {
+  header .navbar {
+    flex-flow: row wrap;
+  }
+  header .navbar .logo {
+    color: #16a085;
+    font-weight: bold;
+    margin-right: auto;
+    font-size: 1.5rem;
+  }
+  header .navbar .logo + label {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    color: #555;
+    cursor: pointer;
+  }
+  header .navbar .logo + label + input:checked + .collapse {
+    display: block;
+  }
+  header .navbar .collapse {
+    display: none;
+    width: 100%;
+    flex-flow: column;
+  }
+  header .navbar .collapse .links {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  header .navbar .collapse .links li {
+    margin: 0.5rem 0.3rem;
+  }
+}

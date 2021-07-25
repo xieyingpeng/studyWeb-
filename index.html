@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>快乐前端学习</title>
+    <link href="css/fashionfoucs_lrtk.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.plugin.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/boringman.css" />
+	<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+	<link href="css/imagehover.css" rel="stylesheet" media="all">
+	<style type="text/css">
+		.demo {
+		  display: inline-block;
+		  width: 24%;
+		  padding: 10px;
+		  -webkit-box-sizing: padding-box;
+		  box-sizing: padding-box;
+		}
+		.demo textarea {
+		  -webkit-box-sizing: padding-box;
+		  box-sizing: padding-box;
+		  font-family: "Roboto";
+		  font-size: 0.9em;
+		  height: 32px;
+		  padding: 6px 0px;
+		  resize: none;
+		  text-align: center;
+		  width: 100%;
+		  border: 1px solid rgba(0, 0, 0, 0.2);
+		}
+		img {
+		  border: none;
+		}
+		.effects {
+		  margin: 3em 15em;
+		}
+		@media only screen and (max-width: 959px) {
+		  .demo {
+			width: 32.5%;
+		  }
+		}
+		@media only screen and (max-width: 659px) {
+		  .demo {
+			width: 49%;
+		  }
+		}
+		@media only screen and (max-width: 360px) {
+		  .demo {
+			width: 100%;
+		  }
+		}
+	</style>
+	<script type="text/javascript">
+		function shert(a){
+			alert("网页出错");
+		}
+	</script>
+</head>
+<body>
+	<header style="background-color: antiquewhite;">
+	  <!-- 顶部导航 -->
+	  <div class="container">
+	    <div class="navbar">
+	      <a href="home.html" class="logo">XieyingPeng</a>
+	      <label for="toggle-nav" 
+	        ><i class="fa fa-tasks" aria-hidden="true"></i
+	      ></label>
+		 
+	      <input type="checkbox" name="toggle-nav" id="toggle-nav" />
+	      <div class="collapse">
+	        <ul class="links">
+			  <li><a href="index.html">首页</a></li>
+	          <li><a href="html/home.html">学习主页</a></li>
+			  <li><a href="html/liuy.html">学习讨论</a></li>
+			  <li><a href="html/aboutme.html">关于我</a></li>
+	          <li><a href="#" class="support">赞赏支持</a></li>
+			  
+	        </ul>
+			<div style="margin-right: 40px;">
+				<input type="search" name="" id="wy" placeholder="CSS/JS/HTML" style="height: 30px;width: 200px;"/><button type="button" style="height: 30px;margin-right: 10px;width: 80px;background-color: blueviolet;color: red;" onclick="shert()">搜索</button>
+				<datalist id="wy">
+					<option value ="JS">
+					<option value ="CS">
+					<option value ="JS">
+					<option value ="CS">
+					<option value ="JS">
+					<option value ="CS">
+				</datalist>
+				
+			</div>
+	        <div class="form">
+	          <a href="html/login.html">登录</a>
+	          <a href="html/register.html" class="form-bg">注册</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+	
+    <!-- 代码 开始 -->
+    <div id="banner">
+        <ul id="banner_img">
+            <li class="item1">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>互联网品牌传播解决方案</h2>
+                        <p>
+                            成都顶级品牌网站建设公司-锐狐网络！<br />
+                            基于互联网的品牌行销策略的策划与执行。<br />
+                            品牌形象挖掘、梳理、包装、表现与传播。<br />
+                            辅助企业实现品牌战略目标的互联网解决方案。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img" >
+                        <img src="images/20120905092323647.png"  width="506" height="404" alt="互联网品牌传播解决方案" />
+                    </div>
+                </div>
+            </li>
+            <li class="item2">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>Web应用(B/S)定制开发</h2>
+                        <p>
+                            自主研发、完善的开发框架。<br />
+                            详细的需求调研及解决方案。<br />
+                            实施项目经验丰富的项目团队。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015430148.png" width="506" height="404" alt="Web应用(B/S)定制开发" />
+                    </div>
+                </div>
+            </li>
+            <li class="item3">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>互联网时代的整合营销</h2>
+                        <p>
+                            基于互联网的品牌营销策略的定制与执行。<br />
+                            品牌形象挖掘、梳理、包装、表现与传播。<br />
+                            坐拥着最为丰富的行业经验与优势资源。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015446637.png" width="506" height="404" alt="互联网时代的整合营销" />
+                    </div>
+                </div>
+            </li>
+            <li class="item4">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>您的网站全职管家</h2>
+                        <p>
+                            成熟的监控与报警机制。<br />
+                            丰富的整合营销的能力和经验。<br />
+                            专业数据分析、开发和维护部门。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015615324.png" width="506" height="404" alt="您的网站全职管家" />
+                    </div>
+                </div>
+            </li>
+            <li class="item5">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>不可忽略的移动终端</h2>
+                        <p>
+                            IOS系统、Android系统应用开发。<br />
+                            App Store、Google Play 发布。<br />
+                            APP推广服务。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015631560.png" width="506" height="404" alt="不可忽略的移动终端" />
+                    </div>
+                </div>
+            </li>
+            <li class="item6">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>全新的学术会议体验</h2>
+                        <p>
+                            工作更高效，主办方更轻松。<br />
+                            线上报名，让主办方不再为报名的事而费尽脑筋。<br />
+                            线上投稿、审稿，为主办方提高收寄、审稿效率。<br />
+                            酒店预订，会议行程更加轻松。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015651273.png" width="506" height="404" alt="全新的学术会议体验" />
+                    </div>
+                </div>
+            </li>
+            <li class="item7">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>医院网站管理系统(HMS)</h2>
+                        <p>
+                            与大型医院密切合作。<br />
+                            诊疗挂号很轻松，检验结果实时查询，在线医患服务。<br />
+                            便捷的数据处理能力，稳定的软件基础架构。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015711808.png" width="506" height="404" alt="医院网站管理系统(HMS)" />
+                    </div>
+                </div>
+            </li>
+            <li class="item8">
+                <div class="wrapper">
+                    <div class="ad_txt">
+                        <h2>智慧点亮网络(RUIFOX-LAB)</h2>
+                        <p>
+                            互联网改变世界，我们改变互联网。<br />
+                            精彩前沿技术演练场。<br />
+                            锐狐新产品尝鲜体验。
+                        </p>
+                        <a href="http://sc.chinaz.com/" target="_blank">了解详细&gt;</a>
+                    </div>
+                    <div class="ad_img">
+                        <img src="images/20120830015726137.png" width="506" height="404" alt="智慧点亮网络(RUIFOX-LAB)" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="banner_ctr">
+            <div id="drag_ctr"></div>
+            <ul>
+                <li class="first-item">网站建设</li>
+                <li>品牌网站建设</li>
+                <li>应用系统开发</li>
+                <li>网络整合营销</li>
+                <li>网络运维托管</li>
+                <li>手机APP开发</li>
+                <li>学术会议系统</li>
+                <li>医院网站系统</li>
+                <li>实验室</li>
+                <li class="last-item">网站设计</li>
+            </ul>
+            <div id="drag_arrow"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/fashionfoucs.js"></script>
+    <!-- 代码 结束 -->
+	<div class="effects" style="margin-left: 340px;">
+		<h3>课程推荐</h3>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k4.jpg">
+			<figcaption>
+			  <h3>课程1</h3>
+			  <p>网页制作是web1.0时代的产物，那个时候的网页主要是静态网页，所谓的静态网页就是没有与用户进行交互而仅仅供读者浏览的网页，例如一篇QQ日志、一篇博文等展示性文章。</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">123人喜欢/点击          了解详情</p>
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k5.jpg" >
+			<figcaption>
+			  <h3>课程2</h3>
+			  <p>　处于web2.0时代的你，如果要学习网站开发技术，就不要再相信所谓的“网页三剑客Dreamweaver+Fireworks+Flash”，因为这个组合已经是上个互联网时代的产物。</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1213人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k3.jpg" >
+			<figcaption>
+			  <h3>课程3</h3>
+			  <p>网页制作是web1.0时代的产物，那个时候的网页主要是静态网页，所谓的静态网页就是没有与用户进行交互而仅仅供读者浏览的网页，例如一篇QQ日志、一篇博文等展示性文章。</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1263人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k4.jpg" >
+			<figcaption>
+			  <h3>课程4</h3>
+			  <p>　前端技术最核心的是HTML、CSS和JavaScript，但是对于一个真正的前端工程师来说，哪怕你精通这三个，你也不能称为一个真正的“前端工程师”</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k13.png" >
+			<figcaption>
+			  <h3>课程5</h3>
+			  <p>　网页制作是web1.0时代的产物，那个时候的网页主要是静态网页，所谓的静态网页就是没有与用户进行交互而仅仅供读者浏览的网页，例如一篇QQ日志、一篇博文等展示性文章。</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k14.jpg" >
+			<figcaption>
+			  <h3>课程6</h3>
+			  <p>　这一条路线是比较理想的一条从前端开发到后端开发的学习路线，其实你别看这条路线那么长，其实我是截断了来定制的，要掌握的也就几门技术：HTML、CSS、JavaScript、ASP.NET（PHP）、Ajax等。</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k15.jpg" >
+			<figcaption>
+			  <h3>课程7</h3>
+			  <p>　前端技术最核心的是HTML、CSS和JavaScript，但是对于一个真正的前端工程师来说，哪怕你精通这三个，你也不能称为一个真正的“前端工程师”</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k16.jpg" >
+			<figcaption>
+			  <h3>课程8</h3>
+			  <p>　web1.0到web2.0，网页制作已经变为前端开发了。现在对于前端开发，你要学的不是什么“网页三剑客”，而是“HTML+CSS+JavaScript”</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k14.jpg" >
+			<figcaption>
+			  <h3>课程9</h3>
+			  <p>web1.0到web2.0，网页制作已经变为前端开发了。现在对于前端开发，你要学的不是什么“网页三剑客”，而是“HTML+CSS+JavaScript”</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k14.jpg" >
+			<figcaption>
+			  <h3>课程10</h3>
+			  <p>　web1.0到web2.0，网页制作已经变为前端开发了。现在对于前端开发，你要学的不是什么“网页三剑客”，而是“HTML+CSS+JavaScript”</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k7.jpg" >
+			<figcaption>
+			  <h3>课程11</h3>
+			  <p>　web1.0到web2.0，网页制作已经变为前端开发了。现在对于前端开发，你要学的不是什么“网页三剑客”，而是“HTML+CSS+JavaScript”</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k18.jpg" >
+			<figcaption>
+			  <h3>课程12</h3>
+			  <p>　前端开发是创建WEB页面或APP等前端界面呈现给用户的过程，通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互 [1]  </p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k4.jpg" >
+			<figcaption>
+			  <h3>课程13</h3>
+			  <p>　前端开发是创建WEB页面或APP等前端界面呈现给用户的过程，通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，来实现互联网产品的用户界面交互 [1]  </p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k19.jpg" >
+			<figcaption>
+			  <h3>课程14</h3>
+			  <p>　前端开发从网页制作演变而来，名称上有很明显的时代特征。在互联网的演化进程中，网页制作是Web1.0时代的产物，早期网站主要内容都是静态，</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k11.jpg" >
+			<figcaption>
+			  <h3>课程15</h3>
+			  <p>　前端开发从网页制作演变而来，名称上有很明显的时代特征。在互联网的演化进程中，网页制作是Web1.0时代的产物，早期网站主要内容都是静态，</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div class="demo">
+		  <figure class="imghvr-fade" onclick="shert()">
+			  <img src="images/k12.jpg" >
+			<figcaption>
+			  <h3>课程16</h3>
+			  <p>　前端开发跟随移动互联网发展带来了大量高性能的移动终端设备应用。HTML5，Node.js的广泛应用，各类UI框架，JS类库层出不穷，开发难度也在逐步提升。</p>
+			</figcaption><a href="javascript:;"></a>
+		  </figure>
+		  <p style="color: blueviolet;">1243人喜欢/点击          了解详情</p>
+		 
+		</div>
+		<div id="">
+			<h3>推荐教师</h3>
+			<a href="#">
+				<img src="images/s1.png" style="width: 1000px;height: 500px;margin-top: 20px;" />
+			</a>
+			<a href="#">
+				<img src="images/s2.png" style="width: 1000px;height: 500px;margin-top: 20px;" />
+			</a>
+			<a href="#">
+				<img src="images/s3.png" style="width: 1000px;height: 600px;margin-top: 20px;" />
+			</a>
+		</div>
+		
+	</div>
+	
+ <!-- 底部footer -->
+        <footer>
+          <div>2021 谢应鹏 </div>
+          <div>乐于分享，分享快乐</div>
+          <div>
+          <ul class="social-tool">
+            <li><a href="https://github.com/xieyingpeng/" target="_blank"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1969454436,2593720224&fm=26&gp=0.jpg" alt="github"></a></li>
+            <li><a href="https://gitee.com/xie-yingpeng/project-1.git" target="_blank"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1272163934,1051423405&fm=26&gp=0.jpg" alt="gitee"></a></li>
+          </ul>
+          </div>
+       <audio src="../mp3/zhuye.mp3"  autoplay="autoplay"></audio>
+        </footer>
+</body>
+</html>

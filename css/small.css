@@ -1,0 +1,18 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.web-card {
+  width: 185px;
+  margin: 0.8rem 0.5rem;
+  padding: 0.2rem 0;
+}
+.web-card .web-card-name p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90px;
+}
+.web-card .web-card-description p {
+  width: 90px;
+  padding: 0.1rem 0.2rem;
+}
